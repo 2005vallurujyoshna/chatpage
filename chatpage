@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Page</title>
+    <style>
+        /* Background and overall styling */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff;
+            background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/chatbg.png');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Chat container styling */
+        .chat-container {
+            width: 300px;
+            background-color: #363f48;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Chat header styling */
+        .chat-header {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Chat message bubbles styling */
+        .chat-message {
+            padding: 20px;
+            margin: 5px 0;
+            border-radius: 8px;
+            width: fit-content;
+            max-width: 80%;
+        }
+
+        /* Styles for messages from the user */
+        .chat-message.user {
+            background-color: #47a3f3;
+            align-self: flex-end;
+        }
+
+        /* Styles for messages from the chat partner */
+        .chat-message.partner {
+            background-color: #52606d;
+            align-self: flex-start;
+        }
+
+        /* Layout for messages */
+        .chat-messages {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chat-container">
+        <div class="chat-header">Chat Room</div>
+        <div class="chat-messages">
+            <div class="chat-message partner">Hi vishnu! How are you?</div>
+            <div class="chat-message user">I'm good, thank you! How about you?</div>
+            <div class="chat-message partner">I'm doing well, thanks for asking!</div>
+            <div class="chat-message user">Great to hear!</div>
+        </div>
+    </div>
+
+</body>
+</html>
